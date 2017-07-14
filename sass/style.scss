@@ -1,0 +1,74 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@charset "UTF-8";
+@import "compass/reset";
+@mixin size ($w,$h) {
+    width:$w;
+    height:$h; 
+}
+
+.html,body {
+    position:relative;
+    font-family: "Microsoft JhengHei";
+    background-color: #eee;
+}
+
+.BBOX {
+    @include size (938px,100%);
+    margin: 10px auto;
+}
+
+.header {
+    @include size(100%,100%); 
+    margin: 40px 0px 30px 0px;
+}
+#h {
+    font-size:24px;
+    margin: 8px 0px;
+    a {
+        text-decoration: none;
+        color:green;
+    }
+}
+#p {
+    font-size: 14px;
+    margin: 8px 0px;
+}
+
+.nav {
+    @include size (100%,56px);
+    background-color: white;
+    border: 1px solid rgba(0,0,0,.15);
+    box-shadow:0px 0px 8px 1px rgba(70%,70%,70%,0.35);
+    display: flex;
+}
+.nav_text {
+    border: .8px solid rgba(80%,80%,80%,.15);
+    padding: 20px;
+}
+.pc {
+    border: none;
+}
+
+.section {
+    @include size(640px,100%);
+}
+.sbox {
+    @include size (580px,100%);
+    margin: 10px 30px;
+}
+.dap {
+    @include size(580px,120px);
+    display: flex;
+    flex-direction:row;
+    
+}
+.date {
+    @include size(70px,70px);
+    border: 1px solid black;
+}
+.apa{
+    @include size(460px,120px)
+}
